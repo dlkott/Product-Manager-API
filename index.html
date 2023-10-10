@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<title>Product Manager</title>
+	<link href="stylesheet.css" rel="stylesheet" type="text/css">
+</head>
+<body id="main">
+
+<h1>Предложение по продукту</h1>
+
+<h3>Введите Ваше предложение</h3>
+<div>
+    <p>
+        <label for="description">Описание продукта: </label>
+        <input id="description" type="text">
+    </p>
+
+    <p>
+        <label for="email">Введите Ваш E-mail: </label>
+        <input id="email" type="email">
+    </p>
+
+    <p>
+        <label for="price">Рекомендуемая цена: </label>
+        <input id="price" type="number">
+    </p>
+
+    <p>
+        <label for="sales">Ежегодный объем продаж: </label>
+        <input id="sales" type="number">
+    </p>
+
+    <p>
+         <button id="add">Добавить</button>
+    </p>
+</div>
+
+<fieldset id="allProductSuggestions">
+    <legend>Все предложения</legend>
+    <button id="sort">Сортировать</button> 
+    <button id="reverse">Реверс</button>
+    <div id="allProductsList"></div>
+</fieldset>
+
+<fieldset id="matchingProductSuggestions">
+    <legend>Соответствующие предложения по продуктам</legend>
+    <input id="searchString" type="text">
+    <button id="search">Поиск</button> 
+    <div id="matchingProductsList"></div>
+</fieldset>
+
+<script src="script.js"></script>
+</body>
+</html>
